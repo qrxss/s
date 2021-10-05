@@ -32,8 +32,8 @@ body {
   box-shadow: 0px 0px 0 0 #4D5259;
 }
 .round:hover {
-   background: #03e9f4;
-    color: #050801;
+   background: #FFFFFF;
+    color: #FFFFFF;
   
 }
 
@@ -53,8 +53,8 @@ body {
   transform: translateY(4px) translateX(4px);
 }
 .settings:hover {
-   background: #03e9f4;
-    color: #050801;
+   background: #FFFFFF;
+    color: #FFFFFF;
 }
 
 
