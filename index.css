@@ -19,8 +19,8 @@ body {
 .round{
   background-color: transparent;
   color: #FFFFFF;
-  border: 3px solid;
-  border-radius: 25px;
+  border: 1px solid;
+  border-radius: 15px;
   border-color: #FFFFFF;
   height: 50px;
   padding: 5px 25px;
@@ -32,7 +32,7 @@ body {
   box-shadow: 0px 0px 0 0 #4D5259;
 }
 .round:hover {
-   background: #FFFFFF;
+   background-color: #transparent;
     color: #FFFFFF;
   
 }
@@ -40,8 +40,8 @@ body {
 .settings {
   background-color: transparent;
   color: #FFFFFF;
-  border: 3px solid;
-  border-radius: 25px;
+  border: 1px solid;
+  border-radius: 15px;
   border-color: #FFFFFF;
   height: 50px;
   padding: 5px 25px;
@@ -53,7 +53,7 @@ body {
   transform: translateY(4px) translateX(4px);
 }
 .settings:hover {
-   background: #FFFFFF;
+   background-color: #transparent;
     color: #FFFFFF;
 }
 
