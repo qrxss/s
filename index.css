@@ -28,13 +28,11 @@ body {
    background-color: transparent;
   color: var(--neon-main);
   border: 3px solid var(--neon-main);
-  box-shadow: 0px 0px 25px 10px var(--neon-shadow), inset 0px 0px 25px 10px var(--neon-shadow);
   border-radius: 25px;
   height: 50px;
   padding: 5px 25px;
   text-shadow: 0 0 5px var(--neon-shadow);
   transition: box-shadow .25s ease;
-  animation: neon-text-glitch 3s steps(1) infinite, neon-border-glitch 4.5s steps(1) infinite;
 } 
 .round:active {
   transform: translateY(4px) translateX(4px);
@@ -50,18 +48,15 @@ body {
   background-color: transparent;
   color: var(--neon-main);
   border: 3px solid var(--neon-main);
-  box-shadow: 0px 0px 25px 10px var(--neon-shadow), inset 0px 0px 25px 10px var(--neon-shadow);
   border-radius: 25px;
   height: 50px;
   padding: 5px 25px;
   text-shadow: 0 0 5px var(--neon-shadow);
   transition: box-shadow .25s ease;
-  animation: neon-text-glitch 3s steps(1) infinite, neon-border-glitch 4.5s steps(1) infinite;
 }
 
 .settings:active {
   transform: translateY(4px) translateX(4px);
-  box-shadow: 4px 4px 0 0 #4D5259;
 }
 .settings:hover {
    background: #03e9f4;
