@@ -17,13 +17,13 @@ body {
 }
 
 .round{
-   background-color: transparent;
-  color: var(--neon-main);
-  border: 3px solid var(--neon-main);
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 3px solid
   border-radius: 25px;
   height: 50px;
   padding: 5px 25px;
-  text-shadow: 0 0 5px var(--neon-shadow);
+  text-shadow: 0 0 5px
   transition: box-shadow .25s ease;
 } 
 .round:active {
@@ -39,11 +39,11 @@ body {
 .settings {
   background-color: transparent;
   color: #FFFFFF;
-  border: 3px solid var(--neon-main);
+  border: 3px solid;
   border-radius: 25px;
   height: 50px;
   padding: 5px 25px;
-  text-shadow: 0 0 5px var(--neon-shadow);
+  text-shadow: 0 0 5px
   transition: box-shadow .25s ease;
 }
 
