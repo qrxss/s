@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=League+Script);
+@import url(//fonts.googleapis.com/css?family=Vibur);
 
 body {
   color: #FFFFFF;
@@ -18,15 +18,21 @@ body {
 
 .round{
   background-color: transparent;
-  color: #FFFFFF;
   border: 1px solid;
   border-radius: 15px;
   border-color: #FFFFFF;
   height: 50px;
   padding: 5px 25px;
-  text-shadow: 0 0 5px;
-  transition: box-shadow .25s ease;
-} 
+   font: 400 19vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.round span{
+  animation: blink linear infinite 2s;
+}
+.round span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
 .round:active {
   transform: translateY(4px) translateX(4px);
   box-shadow: 0px 0px 0 0 #4D5259;
@@ -39,14 +45,55 @@ body {
 
 .settings {
   background-color: transparent;
-  color: #FFFFFF;
   border: 1px solid;
   border-radius: 15px;
   border-color: #FFFFFF;
   height: 50px;
   padding: 5px 25px;
-  text-shadow: 0 0 5px
-  transition: box-shadow .25s ease;
+   font: 400 19vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+.settings span{
+  animation: blink linear infinite 2s;
+}
+.settings span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+  
 }
 
 .settings:active {
