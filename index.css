@@ -1,13 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=League+Script);
 
-:root {
-  --neon-main: #F7F3F7;
-  --neon-shadow: #99D2D0;
-  --neon-main-glitch: #F7F3F7c2;
-  --neon-text-glitch: #F7F3F788;
-  --neon-shadow-glitch: rgba(153, 210, 208, 0.76);
-}
-
 body {
   color: #FFFFFF;
   background: url(https://wallpaperaccess.com/full/202978.jpg) no-repeat center center fixed; 
@@ -46,7 +38,7 @@ body {
 
 .settings {
   background-color: transparent;
-  color: var(--neon-main);
+  color: #FFFFFF;
   border: 3px solid var(--neon-main);
   border-radius: 25px;
   height: 50px;
