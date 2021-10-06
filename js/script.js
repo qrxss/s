@@ -23,24 +23,24 @@ function cookieClick() {
     //automatic Granny upgrade to 2x
     if(num >= 30 ){
         num += 2;
-        upgradeLevel.innerHTML = "Granny Level";
+        upgradeLevel.innerHTML = "Old Cat Level";
     }
 
     //automatic factory upgrade to 10x
     if(num >= 500) {
         num += 10;
-        upgradeLevel.innerHTML = "Factory Level";
+        upgradeLevel.innerHTML = "Super Cat Level";
     }
 
     //automatic plant upgrade to 30x
     if(num >= 1000) {
         num += 30;
-        upgradeLevel.innerHTML = "Plant Level";
+        upgradeLevel.innerHTML = "Cat Nip Level";
     }
 
     //automatic super factory upgrade to 1000x
     if(num >= 100000) {
         num += 1000;
-        upgradeLevel.innerHTML = "Super-Plant Level";
+        upgradeLevel.innerHTML = "Super Cat Nip Level";
     }
 }
