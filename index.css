@@ -1,3 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=League+Script);
+
+:root {
+  --neon-main: #F7F3F7;
+  --neon-shadow: #99D2D0;
+  --neon-main-glitch: #F7F3F7c2;
+  --neon-text-glitch: #F7F3F788;
+  --neon-shadow-glitch: rgba(153, 210, 208, 0.76);
+}
 
 body {
   color: #FFFFFF;
@@ -16,89 +25,47 @@ body {
 }
 
 .round{
-  background-color: transparent;
-  border: 1px solid;
-  border-radius: 15px;
-  border-color: #FFFFFF;
+   background-color: transparent;
+  color: var(--neon-main);
+  border: 3px solid var(--neon-main);
+  box-shadow: 0px 0px 25px 10px var(--neon-shadow), inset 0px 0px 25px 10px var(--neon-shadow);
+  border-radius: 25px;
   height: 50px;
   padding: 5px 25px;
-  color: #fee;
-  text-shadow: 0 -40px 50px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
-}
-.round span{
-  animation: blink linear infinite 2s;
-}
-.round span:nth-of-type(2){
-  animation: blink linear infinite 3s;
-}
+  text-shadow: 0 0 5px var(--neon-shadow);
+  transition: box-shadow .25s ease;
+  animation: neon-text-glitch 3s steps(1) infinite, neon-border-glitch 4.5s steps(1) infinite;
+} 
 .round:active {
   transform: translateY(4px) translateX(4px);
   box-shadow: 0px 0px 0 0 #4D5259;
 }
 .round:hover {
-   background-color: #transparent;
-    color: #FFFFFF;
+   background: #03e9f4;
+    color: #050801;
   
 }
 
 .settings {
   background-color: transparent;
-  border: 1px solid;
-  border-radius: 15px;
-  border-color: #FFFFFF;
+  color: var(--neon-main);
+  border: 3px solid var(--neon-main);
+  box-shadow: 0px 0px 25px 10px var(--neon-shadow), inset 0px 0px 25px 10px var(--neon-shadow);
+  border-radius: 25px;
   height: 50px;
   padding: 5px 25px;
-  color: #fee;
-  text-shadow: 0 -40px 50px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
-}
-.settings span{
-  animation: blink linear infinite 2s;
-}
-.settings span:nth-of-type(2){
-  animation: blink linear infinite 3s;
-}
-@keyframes blink {
-  78% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  79%{
-     color: #333;
-  }
-  80% {
-    
-    text-shadow: none;
-  }
-  81% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  82% {
-    color: #333;
-    text-shadow: none;
-  }
-  83% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  92% {
-    color: #333;
-    text-shadow: none;
-  }
-  92.5% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-}
-  
+  text-shadow: 0 0 5px var(--neon-shadow);
+  transition: box-shadow .25s ease;
+  animation: neon-text-glitch 3s steps(1) infinite, neon-border-glitch 4.5s steps(1) infinite;
 }
 
 .settings:active {
   transform: translateY(4px) translateX(4px);
+  box-shadow: 4px 4px 0 0 #4D5259;
 }
 .settings:hover {
-   background-color: #transparent;
-    color: #FFFFFF;
+   background: #03e9f4;
+    color: #050801;
 }
 
 
