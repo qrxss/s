@@ -1,72 +1,65 @@
-@import url(https://fonts.googleapis.com/css?family=League+Script);
-
-:root {
-  --neon-main: #F7F3F7;
-  --neon-shadow: #99D2D0;
-  --neon-main-glitch: #F7F3F7c2;
-  --neon-text-glitch: #F7F3F788;
-  --neon-shadow-glitch: rgba(153, 210, 208, 0.76);
-}
-
 body {
-  color: #FFFFFF;
-  background: url(https://p1.pxfuel.com/preview/405/316/33/background-blue-gradient.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    padding-top: 30px;
+    font-family: Arial;
+    background-color: turquoise;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}                                           
+
+p {
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin: 5px;
 }
 
-
-.center {
-  margin: 40px;
-  font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+#space {
+    margin: auto;
+    text-align:center;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    border:5px solid;
+    border-radius:10px;
+    background-color: greenyellow;
+    color: white;
+    width:389px;
+    height:60px;
 }
 
-.round{
-   background-color: transparent;
-  color: var(--neon-main);
-  border: 3px solid var(--neon-main);
-  box-shadow: 0px 0px 25px 10px var(--neon-shadow), inset 0px 0px 25px 10px var(--neon-shadow);
-  border-radius: 25px;
-  height: 50px;
-  padding: 5px 25px;
-  text-shadow: 0 0 5px var(--neon-shadow);
-  transition: box-shadow .25s ease;
-  animation: neon-text-glitch 3s steps(1) infinite, neon-border-glitch 4.5s steps(1) infinite;
-} 
-.round:active {
-  transform: translateY(4px) translateX(4px);
-  box-shadow: 0px 0px 0 0 #4D5259;
-}
-.round:hover {
-   background: #03e9f4;
-    color: #050801;
-  
+table {
+    margin-top: 10px;
+    border: 2px solid;
+    border-radius: 5px;
 }
 
-.settings {
-  background-color: transparent;
-  color: var(--neon-main);
-  border: 3px solid var(--neon-main);
-  box-shadow: 0px 0px 25px 10px var(--neon-shadow), inset 0px 0px 25px 10px var(--neon-shadow);
-  border-radius: 25px;
-  height: 50px;
-  padding: 5px 25px;
-  text-shadow: 0 0 5px var(--neon-shadow);
-  transition: box-shadow .25s ease;
-  animation: neon-text-glitch 3s steps(1) infinite, neon-border-glitch 4.5s steps(1) infinite;
+td {
+    border:1px solid;
 }
 
-.settings:active {
-  transform: translateY(4px) translateX(4px);
-  box-shadow: 4px 4px 0 0 #4D5259;
+#numbers {
+    margin: auto;
+    text-align:center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border:5px solid;
+    border-radius:10px;
+    background-color:white;
+    width:200px;
+    height:60px;    
 }
-.settings:hover {
-   background: #03e9f4;
-    color: #050801;
+
+#upgradeLevel {
+    margin: auto;
+    text-align:center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    border:5px solid;
+    border-radius:10px;
+    background-color:lightpink;
+    width:300px;
+    height:50px;    
 }
-
-
-
