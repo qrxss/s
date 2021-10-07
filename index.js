@@ -1,10 +1,8 @@
-
 money = 0;
 moneyup = 1;
 msec = 0;
 upcost = 15;
 catcost = 25;
-workercost = 250;
 upown = 0;
 catown = 0;
 workerown = 0;
@@ -29,14 +27,14 @@ function addcomma(x) {
 //updates all values
 function reloadall() {
   document.getElementById("click").innerHTML =
-    "Cats/click: " + addcomma(moneyup) + " | Cats/sec: " + addcomma(msec);
-  document.getElementById("total").innerHTML = "Cats: " + addcomma(money);
+    "CATS/click: " + addcomma(moneyup) + " | CATS/sec: " + addcomma(msec);
+  document.getElementById("total").innerHTML = "CATS: " + addcomma(money);
   document.getElementById("cat").innerHTML =
-    catown + "-clicker cat: " + addcomma(catcost) + " | +" + addcomma(catadd) + "/sec";
-  document.getElementById("worker").innerHTML =
-    workerown + "-worker: " + addcomma(workercost) + " | +" + addcomma(workadd) + "/sec";
+    catown + "-Helper Cat: " + addcomma(catcost) + " | +" + addcomma(catadd) + "/sec";
+  document.getElementById("Worker").innerHTML =
+    workerown + "-Worker Kitty: " + addcomma(workercost) + " | +" + addcomma(workadd) + "/sec";
   document.getElementById("upgrade").innerHTML =
-    addcomma(upown) + "-main upgrade: " + addcomma(upcost);
+    addcomma(upown) + "-Upgrade Cats: " + addcomma(upcost);
 }
 //overwrites save file
 function save() {
@@ -100,18 +98,18 @@ function reset() {
 //timer
 function myTimer() {
     money += msec;
-  document.getElementById("total").innerHTML = "Cats: " + addcomma(money);
+  document.getElementById("total").innerHTML = "CATS: " + addcomma(money);
 }
 setInterval(myTimer, 1000);
 
 //what happens when button is clicked
 function clicked() {
   money += moneyup;
-  document.getElementById("total").innerHTML = "Cats: " + addcomma(money);
+  document.getElementById("total").innerHTML = "CATS: " + addcomma(money);
 }
 //upgrade function
 function upgrade(name) {
-  if (name == "clicker cat") {
+  if (name == "Helper Kitty") {
     if (money >= catcost && catown < 50) {
       
       if (catown <= 13) {
@@ -147,14 +145,14 @@ function upgrade(name) {
       money -= catcost;
       catcost = catcost * 2;
       document.getElementById("cat").innerHTML =
-        catown + "-clicker cat: " + addcomma(catcost) + " | +" + addcomma(catadd * cboost) + "/sec";
+        catown + "-Helper Kitty: " + addcomma(catcost) + " | +" + addcomma(catadd * cboost) + "/sec";
     } else if (catown == 50) {
       document.getElementById("cat").innerHTML =
-        catown + "-clicker cat: MAX | +15% click/sec";
+        catown + "-Helper Kitty: MAX | +15% click/sec";
     }
   }
 
-  if (name == "worker") {
+  if (name == "Worker Kitty!") {
     if (money >= workercost && workerown < 50) {
       
       if (workerown <= 13) {
@@ -219,6 +217,6 @@ function upgrade(name) {
   }
 
   document.getElementById("click").innerHTML =
-    "Cats/click: " + addcomma(moneyup) + " | Cats/sec: " + addcomma(msec);
-  document.getElementById("total").innerHTML = "Cats: " + addcomma(money);
+    "CATS/click: " + addcomma(moneyup) + " | CATS/sec: " + addcomma(msec);
+  document.getElementById("total").innerHTML = "CATS: " + addcomma(money);
 }
