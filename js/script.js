@@ -1,46 +1,72 @@
-//initial number of cookies    
-var num = 0;
 
-window.onload = function () {
-        var name = prompt("What is your name");
-        
-        var space = document.getElementById("space");
-        
-        space.innerHTML = name + "'s Bakery";
-}
 
-var cookie = document.getElementById("cookie");
 
-function cookieClick() { 
-    num += 1;
 
-    var numbers = document.getElementById("numbers");
-    
-    //upgrade level for printing
-    var upgradeLevel = document.getElementById("upgradeLevel");
-    
-    numbers.innerHTML = num;      
-    //automatic Old Cat upgrade to 2x
-    if(num >= 30 ){
-        num += 2;
-        upgradeLevel.innerHTML = "Old Cat Level";
+
+(function($) { "use strict";
+		
+	//Page cursors
+
+    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+        t.style.left = n.clientX + "px", 
+		t.style.top = n.clientY + "px", 
+		e.style.left = n.clientX + "px", 
+		e.style.top = n.clientY + "px", 
+		i.style.left = n.clientX + "px", 
+		i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+    function n(t) {
+        e.classList.add("hover"), i.classList.add("hover")
     }
-
-    //automatic Super Cat upgrade to 10x
-    if(num >= 500) {
-        num += 10;
-        upgradeLevel.innerHTML = "Super Cat Level";
+    function s(t) {
+        e.classList.remove("hover"), i.classList.remove("hover")
     }
-
-    //automatic Cat Nip Level upgrade to 30x
-    if(num >= 1000) {
-        num += 30;
-        upgradeLevel.innerHTML = "Cat Nip Level";
+    s();
+    for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
     }
-
-    //automatic Super Cat NIp upgrade to 1000x
-    if(num >= 100000) {
-        num += 1000;
-        upgradeLevel.innerHTML = "Super Cat Nip Level";
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
     }
-}
+	
+	//Navigation
+
+	var app = function () {
+		var body = undefined;
+		var menu = undefined;
+		var menuItems = undefined;
+		var init = function init() {
+			body = document.querySelector('body');
+			menu = document.querySelector('.menu-icon');
+			menuItems = document.querySelectorAll('.nav__list-item');
+			applyListeners();
+		};
+		var applyListeners = function applyListeners() {
+			menu.addEventListener('click', function () {
+				return toggleClass(body, 'nav-active');
+			});
+		};
+		var toggleClass = function toggleClass(element, stringClass) {
+			if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+		};
+		init();
+	}();
+
+	
+	//Switch light/dark
+	
+	$("#switch").on('click', function () {
+		if ($("body").hasClass("light")) {
+			$("body").removeClass("light");
+			$("#switch").removeClass("switched");
+		}
+		else {
+			$("body").addClass("light");
+			$("#switch").addClass("switched");
+		}
+	});          
+              
+})(jQuery); 
