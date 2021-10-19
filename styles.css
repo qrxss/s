@@ -1,6 +1,5 @@
-@font-face {
-font-family: "tesla";
-src: url(https://www.dafont.com/search.php?q=tesla);}
+@import url('https://fonts.google.com/specimen/Oswald');
+
 
 body {
   background-color: black;
