@@ -5,19 +5,20 @@
 	<script src="index.js"></script>
 </head>
 <body>
-	<div id='container'></div>
-	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/515428/three.min.js'></script>
-	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/515428/PointerLockControls.js"></script>
-	<div id="blocker">
+	<meta name="viewport" content="width=device-width,user-scalable=no">
 
-		<div id="instructions">
-			<strong>Loading...</strong>
-		</div>
-
+<div id="container">
+	<div id="game"></div>
+	<div id="score">0</div>
+	<div id="instructions">Click (or press the spacebar) to place the block</div>
+	<div class="game-over">
+		<h2>Game Over</h2>
+		<p>You did great, you're the best.</p>
+		<p>Click or spacebar to start again</p>
 	</div>
-    <div id="status">
-    </div>
-	<div id="dino-alert">
-
+	<div class="game-ready">
+		<div id="start-button">Start</div>
+		<div></div>
 	</div>
-    </body>
+</div>
+</body>
